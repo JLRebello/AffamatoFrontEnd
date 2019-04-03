@@ -1,0 +1,128 @@
+@charset "UTF-8";
+body{
+	background-image: url("images/background8.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+#aboutbody{
+    background-image: url("images/background2.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+#dashboardbody{
+    background-image: url("images/background.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+#pane{
+	font-family: TimesNewRoman;
+	color: white;
+	text-align: left;
+	border-radius: 25px;
+    padding: 20px; 
+    width: 650px;
+    height: 150px; 
+	text-shadow: 3px 3px black;
+}
+
+#pane img{
+	float: left;
+}
+
+#pane2{
+	font-family: TimesNewRoman;
+	color: white;
+	text-align: left;
+	border-radius: 25px;
+    padding: 20px; 
+    width: 650px;
+    height: 150px; 
+    text-shadow: 1px 1px black;
+
+}
+
+#pane2 img{
+	float: left;
+}
+
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: lightGray;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #8B0000;
+  color: white;
+}
+
+.topnav .search-container {
+  float: right;
+}
+
+.topnav input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+.topnav .search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.topnav .search-container button:hover {
+  background: #ccc;
+}
+
+
+.vertnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: lightGray;
+  height: 100%; /* Full height */
+  position: fixed; /* Make it stick, even on scroll */
+  overflow: auto; /* Enable scrolling if the sidenav has too much content */
+}
+
+.vertnav a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.vertnav a.active {
+  background-color: #145A32;
+  color: white;
+}
+
+.vertnav a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
