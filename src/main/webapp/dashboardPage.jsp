@@ -15,9 +15,11 @@
 <meta charset="UTF-8">
 <title>User Dashboard</title>
 </head>
-  <link type="text/css" rel="stylesheet" href="about.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link type="text/css" rel="stylesheet" href="about.css" />
+  
 <body id="dashboardbody">
 <%
     UserService userService = UserServiceFactory.getUserService();
@@ -46,11 +48,17 @@
   <li><a href="recipesPage.jsp">My Recipes</a></li>
 </l>
 </div>
-<div style="float: right; height:150px; width:860px; padding-top: 100px; padding-bottom: 80px; padding-right: 60px">
-  <img src="images/roundLogo.png" height="300px" width="410px" alt=""/>
-</div>
-<div style="font-family:TimesNewRoman; color: darkRed; float: right; text-shadow: 1px 2px black; height:200px; width:925px; padding-top: 100px; padding-bottom: 80px; padding-right: 60px">
-  <h1>Get ready to use your groceries to the fullest.</h1>
+<div class="container" style="width: 50%; float: right">
+	<div class="panel panel-danger">
+	  <div class="panel-heading">Expiration Alerts!</div>
+	  <div class="panel-body">List soon-to-be expiring ingredients and relevant dates here</div>
+	</div>
+	<div class="panel panel-info">
+	  <div class="panel-heading">Tip of the Day</div>
+	  <div class="panel-body">Eggs can last way past the date on the egg carton! Here's how to test if they are 
+	  still good: Fill a bowl with cold water and place eggs inside. If they're a few weeks old but still good to eat, 
+	  they'll stand on one end at the bottom of the bowl. If they float to the surface, they're no longer fresh enough to eat.</div>
+	</div>
 </div>
 <%
     } else {
