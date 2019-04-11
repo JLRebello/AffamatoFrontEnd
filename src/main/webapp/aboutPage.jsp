@@ -79,7 +79,7 @@ Link to the GitHub repo
 <h1 style="font-family:TimesNewRoman; color: white; text-shadow: 3px 4px black;">About Affamato:</h1>
 <div id="pane2" 	style="height:150px;">
 <p>Affamato is a pantry/fridge assistant web application that helps users do a multitude of food related tasks.
-    It allows users to create grocery lists, track what items are in their pantry, track perish-ability of items,
+    It allows users to create grocery lists, track what items are in their pantry, track perishability of items,
     and recommend recipes based on what's in the pantry, different cuisine types, and different health choices.
     Our goal is to help users save money, reduce their food waste/go green, and broaden their palates.</p>
 </div>
