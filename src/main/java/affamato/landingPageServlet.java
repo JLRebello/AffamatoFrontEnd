@@ -1,15 +1,14 @@
-package aFE;
-
+package affamato;
 import java.io.IOException;
 
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-public class inventoryPageServlet extends HttpServlet{
+public class landingPageServlet extends HttpServlet{
     public void doPost(HttpServletRequest req, HttpServletResponse resp) throws IOException {
     	
-        resp.sendRedirect("/inventoryPage.jsp");
+        resp.sendRedirect("/landingPage.jsp");
     }
 
 }

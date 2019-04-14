@@ -7,7 +7,7 @@
 
 <servlet>
 	<servlet-name>about</servlet-name>
-	<servlet-class>aFE.aboutPageServlet</servlet-class>	
+	<servlet-class>affamato.aboutPageServlet</servlet-class>	
 </servlet>    
 <servlet-mapping>
 	<servlet-name>about</servlet-name>
@@ -15,7 +15,7 @@
 </servlet-mapping>
 <servlet>
 	<servlet-name>dashboard</servlet-name>
-	<servlet-class>aFE.dashboardPageServlet</servlet-class>	
+	<servlet-class>affamato.dashboardPageServlet</servlet-class>	
 </servlet>    
 <servlet-mapping>
 	<servlet-name>dashboard</servlet-name>
@@ -23,7 +23,7 @@
 </servlet-mapping>
 <servlet>
 	<servlet-name>grocerylist</servlet-name>
-	<servlet-class>aFE.grocerylistPageServlet</servlet-class>	
+	<servlet-class>affamato.grocerylistPageServlet</servlet-class>	
 </servlet>    
 <servlet-mapping>
 	<servlet-name>grocerylist</servlet-name>
@@ -31,7 +31,7 @@
 </servlet-mapping>
 <servlet>
 	<servlet-name>inventory</servlet-name>
-	<servlet-class>aFE.inventoryPageServlet</servlet-class>	
+	<servlet-class>affamato.inventoryPageServlet</servlet-class>	
 </servlet>    
 <servlet-mapping>
 	<servlet-name>inventory</servlet-name>
@@ -39,7 +39,7 @@
 </servlet-mapping>
 <servlet>
 	<servlet-name>recipes</servlet-name>
-	<servlet-class>aFE.recipesPageServlet</servlet-class>	
+	<servlet-class>affamato.recipesPageServlet</servlet-class>	
 </servlet>    
 <servlet-mapping>
 	<servlet-name>recipes</servlet-name>

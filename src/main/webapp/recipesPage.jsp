@@ -26,16 +26,43 @@
         pageContext.setAttribute("user", user);
 %>
 <div class="topnav">
-  <a class="active" href="dashboardPage.jsp">My Dashboard Recipes</a>
+  <a class="active" href="dashboardPage.jsp">My Dashboard</a>
   <a href="landingPage.jsp">Home</a>
   <a href="aboutPage.jsp">About</a>
   <a style="float:right" href="<%= userService.createLogoutURL(request.getRequestURI()) %>">Log Out</a>
     <div class="search-container">
-	    <form action="/dashboard" method="post">
+	    <form action="/recipes" method="post">
 	      <input type="text" placeholder="Search..." name="search">
 	      <button type="submit"><i class="fa fa-search"></i></button>
-	    </form>
+		    <div style="float:right; color:white; padding-top:10px" id="list1" class="dropdown-check-list" tabindex="100">
+		        <span class="anchor">Select Filters</span>
+		        <ul class="items">
+		            <li><input type="checkbox" name="veggie"/>Vegetarian </li>
+		            <li><input type="checkbox" name="vegan"/>Vegan</li>
+		            <li><input type="checkbox" name="glutenf"/>Gluten-Free </li>
+		            <li><input type="checkbox" name="keto"/>Ketogenic </li>
+		            <li><input type="checkbox" name="dairyf"/>Dairy-Free </li>
+		            <li><input type="checkbox" name="quickr"/>Quick Recipe </li>
+		            <li><input type="checkbox" name="useinv"/>Use Inventory </li>
+		            <li><input type="checkbox" name="useexp"/>Use Expiring Items </li>
+		        </ul>
+	        </div>
+        </form>
   	</div>
+
+    <script type="text/javascript">
+        var checkList = document.getElementById('list1');
+        checkList.getElementsByClassName('anchor')[0].onclick = function (evt) {
+            if (checkList.classList.contains('visible'))
+                checkList.classList.remove('visible');
+            else
+                checkList.classList.add('visible');
+        }
+
+        checkList.onblur = function(evt) {
+            checkList.classList.remove('visible');
+        }
+    </script>
 </div>
 <div class="vertnav">
 <br>
@@ -51,6 +78,5 @@
     	response.sendRedirect("/landingPage.jsp");
     }
 %>
-
 </body>
 </html>

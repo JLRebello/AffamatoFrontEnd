@@ -5,18 +5,21 @@ body{
     background-attachment: fixed;
     background-size: cover;
 }
+
 #aboutbody{
     background-image: url("images/background2.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
 }
+
 #dashboardbody{
     background-image: url("images/background.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% 100%;
 }
+
 #pane{
 	font-family: TimesNewRoman;
 	color: white;
@@ -83,6 +86,7 @@ body{
   font-size: 17px;
   border: none;
 }
+
 .topnav .search-container button {
   float: right;
   padding: 6px 10px;
@@ -97,7 +101,6 @@ body{
 .topnav .search-container button:hover {
   background: #ccc;
 }
-
 
 .vertnav {
   list-style-type: none;
@@ -125,4 +128,43 @@ body{
 .vertnav a:hover:not(.active) {
   background-color: #555;
   color: white;
+}
+
+.dropdown-check-list {
+  display: inline-block;
+}
+
+.dropdown-check-list ul.items li {
+  list-style: none;
+}
+
+.dropdown-check-list .anchor {
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  padding: 5px 50px 5px 10px;
+  border: 1px solid #ccc;
+}
+
+.dropdown-check-list .anchor:after {
+  position: absolute;
+  content: "";
+  border-left: 2px solid black;
+  border-top: 2px solid black;
+  padding: 5px;
+  right: 10px;
+  top: 20%;
+  transform: rotate(-135deg);
+}
+
+.dropdown-check-list ul.items {
+  padding: 2px;
+  display: none;
+  margin: 0;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+.dropdown-check-list.visible .items {
+  display: block;
 }
