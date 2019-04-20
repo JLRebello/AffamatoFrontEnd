@@ -13,7 +13,7 @@
 <%@ page import = "java.util.Date" %>
 <%@ page import = "java.text.SimpleDateFormat" %>
 <%
-
+//this date is sometimes the next day -- working on a fix. - Julia
 SimpleDateFormat sdf = new SimpleDateFormat("EEEEEEEEE, MMMMMMMMM dd, yyyy");
 sdf.format(new Date());
 String date = sdf.format(new Date());
