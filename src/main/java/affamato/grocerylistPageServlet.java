@@ -23,15 +23,17 @@ public class grocerylistPageServlet extends HttpServlet{
         UserService userService = UserServiceFactory.getUserService();
         DatastoreService datastore = DatastoreServiceFactory.getDatastoreService();
         User user = userService.getCurrentUser();
-    	String query = req.getParameter("search"); //this is working.
-    	URL url = new URL("https://www.affamato.xyz/search?q="+query);
+    	String search = req.getParameter("search"); //this is working.
+    	
+    	//URL url = new URL("https://www.affamato.xyz/search?q="+query);
         // Get the input stream through URL Connection
     	
         //URLConnection con = url.openConnection();
         //InputStream is =con.getInputStream();
         //BufferedReader br = new BufferedReader(new InputStreamReader(is));
         //result = br.readLine();
-	
+    	
+        
         resp.sendRedirect("/grocerylistPage.jsp");
     }
 
