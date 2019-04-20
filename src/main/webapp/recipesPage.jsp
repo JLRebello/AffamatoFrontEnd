@@ -121,7 +121,7 @@
 </div>
 <br />
 
-<button style="float:right" class="btn btn-lg btn-primary btn-add-panel"> <i class="glyphicon glyphicon-plus"></i>Discover!</button>
+<button style="float:right" class="btn btn-lg btn-primary btn-add-panel"> <i class="glyphicon glyphicon-plus"></i> Discover!</button>
 
 <script>
 var $template = $(".template");
