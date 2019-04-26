@@ -15,6 +15,7 @@ import com.google.appengine.api.datastore.Text;*/
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashSet;
+import java.util.List;
 
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -34,8 +35,7 @@ public class aboutPageServlet extends HttpServlet{
     public void doPost(HttpServletRequest req, HttpServletResponse resp) throws IOException {
     	//UserService userService = UserServiceFactory.getUserService();
         //DatastoreService datastore = DatastoreServiceFactory.getDatastoreService();
-        
-        
+
         resp.sendRedirect("/aboutPage.jsp");
     }
 

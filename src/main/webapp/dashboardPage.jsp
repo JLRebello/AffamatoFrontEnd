@@ -133,7 +133,7 @@ String[] tips = new String[numTips];
 <l>
   <li><a class="active" href="dashboardPage.jsp">Welcome</a></li>
   <li><a href="inventoryPage.jsp">My Inventory</a></li>
-  <li><a href="grocerylistPage.jsp">My Grocery Lists</a></li>
+  <li><a href="grocerylistPage.jsp">My Grocery List</a></li>
   <li><a href="recipesPage.jsp">My Recipes</a></li>
 </l>
 </div> 

@@ -55,10 +55,11 @@
 </l>
 </div>
  
+<!-- THIS IS WHERE THE ACCORDION BEGINs -->
 <div class="panel-group" id="accordion" style="float: right; padding: 10px; width: 600pt; height: 250pt">
+
     <div class="panel panel-default">
-        <div class="panel-heading"> <span class="glyphicon glyphicon-remove-circle pull-right "></span>
- 
+        <div class="panel-heading"> <!--  <span class="glyphicon glyphicon-remove-circle pull-right "></span> -->
       <h4 class="panel-title">
         <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
           Grocery List #1
@@ -66,31 +67,86 @@
       </h4>
         </div>
         <div id="collapseOne" class="panel-collapse collapse ">
-
-            <button type="button"  class="btn btn-danger" data-toggle="modal" data-target="#myModalSearch">Add Ingredient +</button>
-            
+        	<ul id="myList" class="list">
+        		<input class="ingredient" type="text" placeholder="Enter Ingredient"> 
+        		<button type="button"  class="btn btn-danger btn-add-ingredient">Add Ingredient +</button>
+			</ul>
         </div>
     </div>
+    
     <div class="panel panel-default template">
-        <div class="panel-heading"> <span class="glyphicon glyphicon-remove-circle pull-right "></span>
+        <div class="panel-heading"> <!--  <span class="glyphicon glyphicon-remove-circle pull-right "></span> -->
              <h4 class="panel-title">
-        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
           Grocery List #2 
         </a>
       </h4>
         </div>
-        <div id="collapseThree" class="panel-collapse collapse">
-
-            <button type="button"  class="btn btn-danger" data-toggle="modal" data-target="#myModalSearch">Add Ingredient +</button>
-            
+        <div id="collapseTwo" class="panel-collapse collapse">
+        	<ul id="myList" class="list">
+        		<input class="ingredient" type="text" placeholder="Enter Ingredient"> 
+        		<button type="button"  class="btn btn-danger btn-add-ingredient">Add Ingredient +</button>
+			</ul>
+  				<!-- <button type="button"  class="btn btn-danger" data-toggle="modal" data-target="#myModalAdd">Add Ingredient +</button>  -->
         </div>         
     </div>
+    
+    <div class="panel panel-default">
+        <div class="panel-heading"> <!--  <span class="glyphicon glyphicon-remove-circle pull-right "></span> -->
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+          Grocery List #3
+        </a>
+      </h4>
+        </div>
+        <div id="collapseThree" class="panel-collapse collapse ">
+        	<ul id="myList" class="list">
+        		<input class="ingredient" type="text" placeholder="Enter Ingredient"> 
+        		<button type="button"  class="btn btn-danger btn-add-ingredient">Add Ingredient +</button>
+			</ul>
+        </div>
+    </div>
+    
+        <div class="panel panel-default">
+        <div class="panel-heading"> <!--  <span class="glyphicon glyphicon-remove-circle pull-right "></span> -->
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
+          Grocery List #4
+        </a>
+      </h4>
+        </div>
+        <div id="collapseFour" class="panel-collapse collapse ">
+        	<ul id="myList" class="list">
+        		<input class="ingredient" type="text" placeholder="Enter Ingredient"> 
+        		<button type="button"  class="btn btn-danger btn-add-ingredient">Add Ingredient +</button>
+			</ul>
+        </div>
+    </div>
+    
+        <div class="panel panel-default">
+        <div class="panel-heading"> <!--  <span class="glyphicon glyphicon-remove-circle pull-right "></span> -->
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseFive">
+          Grocery List #5
+        </a>
+      </h4>
+        </div>
+        <div id="collapseFive" class="panel-collapse collapse ">
+        	<ul id="myList" class="list">
+        		<input class="ingredient" type="text" placeholder="Enter Ingredient"> 
+        		<button type="button"  class="btn btn-danger btn-add-ingredient">Add Ingredient +</button>
+			</ul>
+        </div>
+    </div>
+    
 </div>
-
+<!-- THIS IS WHERE THE ACCORDION ENDs -->
 <br />
 
+<!--  <button style="float: right" type="button"  class="btn btn-lg btn-primary" data-toggle="modal" data-target="#myModal"><i class="glyphicon glyphicon-plus"></i> Add New Grocery List</button> -->
+
+
 <div class="container">
-<button style="float: right" type="button"  class="btn btn-lg btn-primary" data-toggle="modal" data-target="#myModal"><i class="glyphicon glyphicon-plus"></i> Add New Grocery List</button>
   <div class="modal fade" id="myModal" role="dialog">
     <div class="modal-dialog">
     
@@ -112,26 +168,19 @@
 </div>
 
 <div class="container">
-  <div class="modal fade" id="myModalSearch" role="dialog">
+  <div class="modal fade" id="myModalAdd" role="dialog">
     <div class="modal-dialog">
     
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal"></button>
-          <h4 class="modal-title">Search Affamato</h4>
+          <h4 class="modal-title">Enter Ingredient</h4>
         </div>
         <div class="modal-body">
-        
-	        <div class="search-container">
-			    <form action="/grocerylist" method="post">
-			      <input type="text" placeholder="Search for Ingredients..." name="search"> 
-			      <button style="width: 36px; height: 36px" type="submit"><i class="fa fa-search"></i></button>
-			    </form>
-	  	    </div>
-
+			<input id="ingredient" type="text" placeholder="Enter Ingredient"> 
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-lg btn-primary " data-dismiss="modal">OK</button>
+          <button type="button" class="btn btn-lg btn-primary btn-add-ingredient" data-dismiss="modal">OK</button>
         </div>
       </div>
       
@@ -141,7 +190,6 @@
 
 <script>
 var $template = $(".template");
-
 var hash = 2;
 $(".btn-add-panel").on("click", function () {
     var $newPanel = $template.clone();
@@ -158,12 +206,31 @@ $(".btn-add-panel").on("click", function () {
     $newPanel.find(".panel-collapse").attr("id", hash);
     $("#accordion").append($newPanel.fadeIn());
 });
-
 $(document).on('click', '.glyphicon-remove-circle', function () {
     $(this).parents('.panel').get(0).remove();
 });
 </script> 
-  
+
+<p hidden><span class="fa fa-times-circle pull-right" id="exitbutton"></span></p>
+<script >
+
+$(".btn-add-ingredient").on("click", function () {
+     var exitButton = document.getElementById("exitbutton").cloneNode(true);
+	 var node = document.createElement("LI");	 
+	 var addedIngredient = $(this).siblings('.ingredient').val(); 
+	 $(this).siblings('.ingredient').val(''); //reset ingredient add
+	 var textnode = document.createTextNode(addedIngredient); 
+     node.appendChild(textnode);
+     node.appendChild(exitButton);
+     //need to add to the add ingredient's parent not the modal button's parent
+     $(this).parents('.list').append(node);
+     //if you don't want to use the list, and just the panel,
+     //$(this).parents('.panel-collapse').append(node);                
+});
+$(document).on('click', '#exitbutton', function () {
+    $(this).parent().remove();
+});
+</script>   
 
 <%
     } else {
